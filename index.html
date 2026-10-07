@@ -45,7 +45,7 @@
         <p class="eyebrow" data-i18n="hero.eyebrow">Olá, eu sou</p>
         <h1>Ademar Chami Neto</h1>
         <p class="role" data-i18n="hero.role">Desenvolvedor Full Stack</p>
-        <p class="lead" data-i18n="hero.lead">Engenheiro de Software formado. Construo aplicações web completas — front-end em React, APIs REST em Node.js e C#/.NET, bancos relacionais, testes automatizados e deploy com Docker e CI. Venho do suporte de TI, então sei como é o lado de quem usa o sistema.</p>
+        <p class="lead" data-i18n="hero.lead">Engenheiro de Software formado. Construo aplicações completas — front-end em React, Next.js e Vue, APIs REST em Node.js, C#/.NET e PHP, bancos relacionais, testes automatizados e deploy com Docker e CI. Venho do suporte de TI, então sei como é o lado de quem usa o sistema.</p>
         <div class="cta">
           <a class="btn primary" href="#projetos" data-i18n="hero.cta.projects">Ver projetos</a>
           <a class="btn" href="assets/curriculo-ademar-chami-neto.pdf" target="_blank" rel="noopener" data-i18n="hero.cta.cv">Baixar currículo</a>
@@ -78,6 +78,68 @@
       <p class="section-sub" data-i18n="projects.sub">Todos com código aberto, README, testes automatizados e CI no GitHub Actions.</p>
 
       <div class="projects">
+        <!-- Portal de Chamados -->
+        <article class="project">
+          <a class="shot" href="https://portal-chamados-swart.vercel.app/" target="_blank" rel="noopener">
+            <img src="assets/projects/portal.jpg" alt="Fila de chamados do portal com filtros, prioridade e SLA" loading="lazy" width="1200" height="750" />
+          </a>
+          <div class="project-body">
+            <h3>Portal de Chamados</h3>
+            <p data-i18n="p.portal.desc">Front-end de service desk para a minha API de Chamados: fila com filtros na URL, abertura com prioridade ITIL calculada na hora, SLA em horas úteis, conversa com comentários internos e indicadores.</p>
+            <ul class="highlights">
+              <li data-i18n="p.portal.h1">Server Components e Server Actions (padrão BFF)</li>
+              <li data-i18n="p.portal.h2">Token da API em cookie httpOnly, fora do alcance de XSS</li>
+              <li data-i18n="p.portal.h3">Testes com Vitest, Testing Library e Playwright</li>
+            </ul>
+            <ul class="tags"><li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Tailwind</li><li>Zod</li><li>Playwright</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/portal-chamados" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+              <a class="demo" href="https://portal-chamados-swart.vercel.app/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- API de Chamados -->
+        <article class="project">
+          <a class="shot" href="https://github.com/AdemarChamiNeto/api-chamados" target="_blank" rel="noopener">
+            <img src="assets/projects/api-chamados.jpg" alt="Documentação Swagger da API de Chamados" loading="lazy" width="1200" height="750" />
+          </a>
+          <div class="project-body">
+            <h3>API de Chamados</h3>
+            <p data-i18n="p.api.desc">API REST de helpdesk em PHP puro, inspirada na minha rotina de service desk: prioridade pela matriz impacto × urgência, SLA contado em horário comercial e pausado enquanto aguarda o usuário, permissões por papel e histórico.</p>
+            <ul class="highlights">
+              <li data-i18n="p.api.h1">PHP 8 orientado a objetos, sem framework</li>
+              <li data-i18n="p.api.h2">51 testes PHPUnit no CI com MySQL e SQLite</li>
+              <li data-i18n="p.api.h3">Documentação OpenAPI testada contra as rotas</li>
+            </ul>
+            <ul class="tags"><li>PHP 8</li><li>PDO</li><li>MySQL</li><li>SQLite</li><li>JWT</li><li>PHPUnit</li><li>Docker</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/api-chamados" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Painel de Vulnerabilidades -->
+        <article class="project">
+          <a class="shot" href="https://ademarchamineto.github.io/painel-vulnerabilidades/" target="_blank" rel="noopener">
+            <img src="assets/projects/painel.jpg" alt="Painel com resumo, gráficos por severidade e OWASP e tabela de achados" loading="lazy" width="1200" height="750" />
+          </a>
+          <div class="project-body">
+            <h3>Painel de Vulnerabilidades</h3>
+            <p data-i18n="p.painel.desc">Triagem de achados de segurança (SAST, DAST, SCA) com dados fictícios: resumo e gráficos por severidade e OWASP Top 10, tabela com filtros e paginação por cursor, nota CVSS 3.1 explicada e triagem com justificativa.</p>
+            <ul class="highlights">
+              <li data-i18n="p.painel.h1">Nota CVSS calculada pelo vetor, conforme a spec</li>
+              <li data-i18n="p.painel.h2">GraphQL no navegador, pronto para trocar por API real</li>
+              <li data-i18n="p.painel.h3">UI otimista, i18n PT/EN e acessibilidade</li>
+            </ul>
+            <ul class="tags"><li>Vue 3</li><li>TypeScript</li><li>Pinia</li><li>GraphQL</li><li>Apollo</li><li>Vitest</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/painel-vulnerabilidades" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+              <a class="demo" href="https://ademarchamineto.github.io/painel-vulnerabilidades/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
         <!-- Controle de Ponto -->
         <article class="project">
           <a class="shot" href="https://github.com/AdemarChamiNeto/controle-ponto" target="_blank" rel="noopener">
@@ -96,6 +158,40 @@
               <a href="https://github.com/AdemarChamiNeto/controle-ponto" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
               <!-- DEMO-PONTO: quando o deploy no Render estiver no ar, troque o href e remova o hidden -->
               <a href="#" hidden data-i18n="links.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Protocolo de Cartório -->
+        <article class="project">
+          <a class="shot sacd" href="https://github.com/AdemarChamiNeto/protocolo-cartorio" target="_blank" rel="noopener" aria-label="Protocolo de Cartório no GitHub">
+            <div class="sacd-art" aria-hidden="true">
+              <svg viewBox="0 0 400 250">
+                <g fill="none" stroke="currentColor" stroke-opacity=".25">
+                  <rect x="60" y="40" width="280" height="170" rx="8"/>
+                  <path d="M60 70h280M60 100h280M60 130h280M60 160h280M60 190h280M130 70v140M250 70v140"/>
+                </g>
+                <rect x="60" y="40" width="280" height="30" rx="8" fill="#9b1eac" fill-opacity=".55"/>
+                <g fill="#efccaf" fill-opacity=".8"><rect x="72" y="80" width="40" height="10" rx="2"/><rect x="72" y="110" width="40" height="10" rx="2"/><rect x="72" y="140" width="40" height="10" rx="2"/></g>
+                <rect x="262" y="108" width="62" height="14" rx="7" fill="#b6885f"/>
+                <rect x="262" y="138" width="62" height="14" rx="7" fill="#9b1eac"/>
+                <circle cx="318" cy="198" r="26" fill="none" stroke="#efccaf" stroke-width="3"/>
+                <path d="m306 198 9 9 16-18" stroke="#efccaf" stroke-width="4" fill="none" stroke-linecap="round"/>
+              </svg>
+              <span>Livro 1</span>
+            </div>
+          </a>
+          <div class="project-body">
+            <h3>Protocolo de Cartório</h3>
+            <p data-i18n="p.proto.desc">Sistema desktop para o Livro 1 do Registro de Imóveis: prenotação com numeração sem buracos, exigências e reapresentação, registro do ato na matrícula e prazos em dias úteis com feriados calculados.</p>
+            <ul class="highlights">
+              <li data-i18n="p.proto.h1">Padrão MVP: telas testadas sem abrir janela</li>
+              <li data-i18n="p.proto.h2">Concorrência otimista com rowversion</li>
+              <li data-i18n="p.proto.h3">Testes de integração contra SQL Server 2022 no CI</li>
+            </ul>
+            <ul class="tags"><li>C#</li><li>.NET 8</li><li>WinForms</li><li>SQL Server</li><li>ADO.NET</li><li>xUnit</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/protocolo-cartorio" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
             </div>
           </div>
         </article>
@@ -216,23 +312,23 @@
       <div class="skills">
         <div class="skill-group">
           <h3>Front-end</h3>
-          <ul class="tags"><li>React</li><li>TypeScript</li><li>JavaScript</li><li>Redux Toolkit</li><li>HTML/CSS</li><li>Tailwind</li><li>Vite</li><li>PWA</li></ul>
+          <ul class="tags"><li>React</li><li>Next.js</li><li>Vue 3</li><li>TypeScript</li><li>JavaScript</li><li>Redux Toolkit</li><li>Pinia</li><li>GraphQL</li><li>HTML/CSS</li><li>Tailwind</li><li>PWA</li></ul>
         </div>
         <div class="skill-group">
           <h3>Back-end</h3>
-          <ul class="tags"><li>Node.js</li><li>Express</li><li>tRPC</li><li>C# / .NET 8</li><li>ASP.NET Core</li><li>Entity Framework</li><li>APIs REST</li><li>JWT</li></ul>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>tRPC</li><li>C# / .NET 8</li><li>ASP.NET Core</li><li>Entity Framework</li><li>WinForms</li><li>PHP 8</li><li>APIs REST</li><li>JWT</li></ul>
         </div>
         <div class="skill-group">
           <h3 data-i18n="skills.db">Banco de dados</h3>
-          <ul class="tags"><li>PostgreSQL</li><li>PostGIS</li><li>MySQL</li><li>Drizzle ORM</li></ul>
+          <ul class="tags"><li>PostgreSQL</li><li>PostGIS</li><li>MySQL</li><li>SQL Server</li><li>SQLite</li><li>Drizzle ORM</li></ul>
         </div>
         <div class="skill-group">
           <h3 data-i18n="skills.devops">Testes e DevOps</h3>
-          <ul class="tags"><li>Vitest</li><li>xUnit</li><li>Testing Library</li><li>Docker</li><li>GitHub Actions</li><li>Git</li><li>Swagger</li></ul>
+          <ul class="tags"><li>Vitest</li><li>Testing Library</li><li>Playwright</li><li>PHPUnit</li><li>xUnit</li><li>Docker</li><li>GitHub Actions</li><li>Git</li><li>Swagger</li></ul>
         </div>
         <div class="skill-group">
           <h3 data-i18n="skills.also">Também</h3>
-          <ul class="tags"><li data-i18n="skills.flutter">Flutter / Dart (faculdade)</li><li data-i18n="skills.php">PHP (faculdade)</li><li>Linux</li><li>Windows</li><li>Scrum</li><li>ITIL</li></ul>
+          <ul class="tags"><li data-i18n="skills.flutter">Flutter / Dart (faculdade)</li><li>Linux</li><li>Windows</li><li>Scrum</li><li>ITIL</li></ul>
         </div>
       </div>
     </section>
