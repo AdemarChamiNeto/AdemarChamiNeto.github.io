@@ -147,3 +147,14 @@ img { max-width: 100%; display: block; }
 .contact p { color: var(--muted); max-width: 56ch; margin: 8px auto 24px; }
 
 .footer { border-top: 1px solid var(--border); padding: 24px 0 40px; color: var(--muted); font-size: .88rem; text-align: center; }
+
+/* ===== Aviso de cookies (LGPD) ===== */
+.consent { position: fixed; z-index: 100; left: 16px; right: 16px; bottom: 16px; max-width: 760px; margin: 0 auto;
+  display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  padding: 16px 20px; background: var(--surface); color: var(--text); border: 1px solid var(--border);
+  border-radius: var(--radius); box-shadow: var(--shadow); }
+.consent[hidden] { display: none; }
+.consent p { margin: 0; flex: 1 1 320px; font-size: .95rem; }
+.consent-actions { display: flex; gap: 8px; }
+.link { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
+.link[hidden] { display: none; }

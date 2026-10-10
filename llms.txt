@@ -1,0 +1,23 @@
+# Ademar Chami Neto — Portfólio
+
+> Desenvolvedor full stack júnior no Paraná (Brasil), formado em Engenharia de Software. Trabalha com React, Next.js, Vue, TypeScript, Node.js, C#/.NET, PHP e PostgreSQL. Procurando vaga de desenvolvedor júnior, full stack ou back-end.
+
+Todos os projetos abaixo têm código aberto no GitHub, testes automatizados e CI no GitHub Actions. Os dados das demos são fictícios.
+
+## Projetos
+
+- [Portal de Chamados](https://github.com/AdemarChamiNeto/portal-chamados): front-end em Next.js 16 para uma API de help desk; BFF com cookie httpOnly, Server Actions, testes com Vitest e Playwright. Demo: https://portal-chamados-swart.vercel.app/
+- [API de Chamados](https://github.com/AdemarChamiNeto/api-chamados): API REST em PHP 8 sem framework; SLA em horas úteis, matriz ITIL, PHPUnit, OpenAPI e Docker.
+- [Painel de Vulnerabilidades](https://github.com/AdemarChamiNeto/painel-vulnerabilidades): Vue 3, Pinia e GraphQL; cálculo de CVSS. Demo: https://ademarchamineto.github.io/painel-vulnerabilidades/
+- [Controle de Ponto](https://github.com/AdemarChamiNeto/controle-ponto): React + Redux Toolkit/RTK Query, Node/Express, PostgreSQL, Swagger, feriados da BrasilAPI. Demo: https://controle-ponto-jvo5.onrender.com
+- [Protocolo de Cartório](https://github.com/AdemarChamiNeto/protocolo-cartorio): desktop em C# WinForms (MVP) com SQL Server; numeração sem buracos, concorrência otimista e prazos em dias úteis.
+- [SACD](https://github.com/AdemarChamiNeto/sacd): TCC — sistema de apoio ao controle da dengue com React, .NET 8, PostgreSQL + PostGIS e controle de acesso por papel.
+- [Ritmo](https://github.com/AdemarChamiNeto/ritmo): PWA em React + TypeScript. Demo: https://ademarchamineto.github.io/ritmo/
+- [Controle Financeiro](https://github.com/AdemarChamiNeto/controle-financeiro): React, Node e MySQL com autenticação própria (bcrypt + JWT).
+
+## Contato
+
+- E-mail: AdemarCN@pm.me
+- LinkedIn: https://www.linkedin.com/in/ademar-chami-neto
+- GitHub: https://github.com/AdemarChamiNeto
+- Currículo (PDF): https://ademarchamineto.github.io/assets/curriculo-ademar-chami-neto.pdf

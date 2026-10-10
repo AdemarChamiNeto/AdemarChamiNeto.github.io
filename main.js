@@ -75,6 +75,12 @@
     "contact.email": "Send an email",
     footer: "Hand-made with HTML, CSS and JavaScript — no framework.",
     "footer.src": "Site source",
+    "footer.privacy": "Privacy",
+    "footer.cookies": "Cookies",
+    "consent.text": "I use analytics cookies (Google Analytics and Microsoft Clarity) to understand how the site is visited. Nothing is collected without your permission.",
+    "consent.more": "Learn more",
+    "consent.no": "Decline",
+    "consent.yes": "Accept",
   };
   const META = {
     pt: { title: "Ademar Chami Neto — Desenvolvedor Full Stack", lang: "pt-BR", button: "EN" },
