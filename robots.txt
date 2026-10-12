@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# O robots.txt só vale na raiz do domínio: os projetos publicados em subpastas
+# (Painel de Vulnerabilidades e Ritmo) têm o sitemap deles listado aqui.
 Sitemap: https://ademarchamineto.github.io/sitemap.xml
+Sitemap: https://ademarchamineto.github.io/painel-vulnerabilidades/sitemap.xml
+Sitemap: https://ademarchamineto.github.io/ritmo/sitemap.xml
