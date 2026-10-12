@@ -18,7 +18,7 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:url" content="https://ademarchamineto.github.io/" />
   <meta property="og:title" content="Ademar Chami Neto — Desenvolvedor Full Stack" />
-  <meta property="og:description" content="8 projetos com React, Next.js, Vue, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
+  <meta property="og:description" content="9 projetos com React, Next.js, Vue, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
   <meta property="og:image" content="https://ademarchamineto.github.io/assets/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -96,6 +96,26 @@
           "position": 1,
           "item": {
             "@type": "SoftwareSourceCode",
+            "name": "Motor de Automações",
+            "description": "Fluxos de automação visuais em React Flow executados por uma fila no PostgreSQL, com retries, agendamento, RLS por workspace e histórico de cada passo.",
+            "codeRepository": "https://github.com/AdemarChamiNeto/motor-automacoes",
+            "programmingLanguage": [
+              "React",
+              "TypeScript",
+              "Node.js",
+              "PostgreSQL"
+            ],
+            "author": {
+              "@id": "https://ademarchamineto.github.io/#pessoa"
+            },
+            "url": "https://motor-automacoes.onrender.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "SoftwareSourceCode",
             "name": "Portal de Chamados",
             "description": "Front-end em Next.js 16 para uma API de help desk, com BFF, cookie httpOnly e testes E2E.",
             "codeRepository": "https://github.com/AdemarChamiNeto/portal-chamados",
@@ -112,7 +132,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 3,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "API de Chamados",
@@ -130,7 +150,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Painel de Vulnerabilidades",
@@ -149,7 +169,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle de Ponto",
@@ -169,7 +189,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Protocolo de Cartório",
@@ -187,7 +207,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "SACD",
@@ -205,7 +225,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Ritmo",
@@ -224,7 +244,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle Financeiro",
@@ -312,6 +332,27 @@
       <p class="section-sub" data-i18n="projects.sub">Todos com código aberto, README, testes automatizados e CI no GitHub Actions.</p>
 
       <div class="projects">
+        <!-- Motor de Automações -->
+        <article class="project">
+          <a class="shot" href="https://motor-automacoes.onrender.com/" target="_blank" rel="noopener">
+            <img src="assets/projects/motor.jpg" alt="Editor visual do Motor de Automações com gatilho de webhook, condição com saídas sim e não, Discord e Slack" loading="lazy" width="1200" height="750" />
+          </a>
+          <div class="project-body">
+            <h3>Motor de Automações</h3>
+            <p data-i18n="p.motor.desc">Fluxos visuais (webhook ou agendamento → condição → chamada de API → Discord, Slack ou Telegram) que rodam de verdade: fila no PostgreSQL, nova tentativa só do passo que falhou e histórico de cada execução com o fluxo colorido pelo resultado.</p>
+            <ul class="highlights">
+              <li data-i18n="p.motor.h1">Fila com SKIP LOCKED, lease e recuperação de worker que cai</li>
+              <li data-i18n="p.motor.h2">Workspaces isolados por Row Level Security e proteção contra SSRF</li>
+              <li data-i18n="p.motor.h3">65 testes, inclusive de concorrência, contra PostgreSQL real no CI</li>
+            </ul>
+            <ul class="tags"><li>React Flow</li><li>React 19</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Docker</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/motor-automacoes" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+              <a class="demo" href="https://motor-automacoes.onrender.com/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
         <!-- Portal de Chamados -->
         <article class="project">
           <a class="shot" href="https://portal-chamados-swart.vercel.app/" target="_blank" rel="noopener">
