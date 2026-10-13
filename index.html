@@ -18,7 +18,7 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:url" content="https://ademarchamineto.github.io/" />
   <meta property="og:title" content="Ademar Chami Neto — Desenvolvedor Full Stack" />
-  <meta property="og:description" content="9 projetos com React, Next.js, Vue, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
+  <meta property="og:description" content="10 projetos com React, Next.js, Vue, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
   <meta property="og:image" content="https://ademarchamineto.github.io/assets/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -116,6 +116,26 @@
           "position": 2,
           "item": {
             "@type": "SoftwareSourceCode",
+            "name": "Visualizador de EXPLAIN",
+            "description": "Visualizador de planos de execução do PostgreSQL: EXPLAIN ANALYZE num banco de exemplo, alertas, tempo próprio de cada nó e índice hipotético (HypoPG).",
+            "codeRepository": "https://github.com/AdemarChamiNeto/visualizador-explain",
+            "programmingLanguage": [
+              "PostgreSQL",
+              "Vue",
+              "TypeScript",
+              "Node.js"
+            ],
+            "author": {
+              "@id": "https://ademarchamineto.github.io/#pessoa"
+            },
+            "url": "https://visualizador-explain.onrender.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "SoftwareSourceCode",
             "name": "Portal de Chamados",
             "description": "Front-end em Next.js 16 para uma API de help desk, com BFF, cookie httpOnly e testes E2E.",
             "codeRepository": "https://github.com/AdemarChamiNeto/portal-chamados",
@@ -132,7 +152,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "API de Chamados",
@@ -150,7 +170,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Painel de Vulnerabilidades",
@@ -169,7 +189,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle de Ponto",
@@ -189,7 +209,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Protocolo de Cartório",
@@ -207,7 +227,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "SACD",
@@ -225,7 +245,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Ritmo",
@@ -244,7 +264,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle Financeiro",
@@ -349,6 +369,27 @@
             <div class="links">
               <a href="https://github.com/AdemarChamiNeto/motor-automacoes" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
               <a class="demo" href="https://motor-automacoes.onrender.com/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Visualizador de EXPLAIN -->
+        <article class="project">
+          <a class="shot" href="https://visualizador-explain.onrender.com/#exemplo=juncao" target="_blank" rel="noopener">
+            <img src="assets/projects/explain.jpg" alt="Visualizador de EXPLAIN com alertas de Seq Scan e de estimativa errada, a árvore do plano com o tempo de cada nó e o painel do nó selecionado" loading="lazy" width="1200" height="750" />
+          </a>
+          <div class="project-body">
+            <h3>Visualizador de EXPLAIN</h3>
+            <p data-i18n="p.explain.desc">Roda EXPLAIN ANALYZE num banco de exemplo com 1 milhão de linhas (ou lê o plano colado) e mostra a árvore com o tempo de cada nó, onde a estimativa errou e o que um índice hipotético mudaria.</p>
+            <ul class="highlights">
+              <li data-i18n="p.explain.h1">SQL do visitante em camadas: papel só leitura, timeout, um comando por vez e limpeza da conexão</li>
+              <li data-i18n="p.explain.h2">Índice hipotético (HypoPG) para comparar o plano antes e depois, sem criar nada</li>
+              <li data-i18n="p.explain.h3">87 testes no CI e Lighthouse 100 em produção</li>
+            </ul>
+            <ul class="tags"><li>PostgreSQL</li><li>Vue 3</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>Docker</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/visualizador-explain" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+              <a class="demo" href="https://visualizador-explain.onrender.com/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
             </div>
           </div>
         </article>
