@@ -97,7 +97,7 @@
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Motor de Automações",
-            "description": "Fluxos de automação visuais em React Flow executados por uma fila no PostgreSQL, com retries, agendamento, RLS por workspace e histórico de cada passo.",
+            "description": "Fluxos de automação visuais em React Flow executados por uma fila no PostgreSQL, com retries, agendamento, RLS por workspace, nó de IA (Claude ou Gemini) e histórico de cada passo.",
             "codeRepository": "https://github.com/AdemarChamiNeto/motor-automacoes",
             "programmingLanguage": [
               "React",
@@ -339,11 +339,11 @@
           </a>
           <div class="project-body">
             <h3>Motor de Automações</h3>
-            <p data-i18n="p.motor.desc">Fluxos visuais (webhook ou agendamento → condição → chamada de API → Discord, Slack ou Telegram) que rodam de verdade: fila no PostgreSQL, nova tentativa só do passo que falhou e histórico de cada execução com o fluxo colorido pelo resultado.</p>
+            <p data-i18n="p.motor.desc">Fluxos visuais (webhook ou agendamento → condição → chamada de API → IA → Discord, Slack ou Telegram) que rodam de verdade: fila no PostgreSQL, nova tentativa só do passo que falhou e histórico de cada execução com o fluxo colorido pelo resultado.</p>
             <ul class="highlights">
               <li data-i18n="p.motor.h1">Fila com SKIP LOCKED, lease e recuperação de worker que cai</li>
-              <li data-i18n="p.motor.h2">Workspaces isolados por Row Level Security e proteção contra SSRF</li>
-              <li data-i18n="p.motor.h3">65 testes, inclusive de concorrência, contra PostgreSQL real no CI</li>
+              <li data-i18n="p.motor.h2">Row Level Security, proteção contra SSRF e 82 testes no CI</li>
+              <li data-i18n="p.motor.h3">Nó de IA com Claude ou Gemini: classificação por JSON Schema e defesa contra prompt injection</li>
             </ul>
             <ul class="tags"><li>React Flow</li><li>React 19</li><li>TypeScript</li><li>Node.js</li><li>Express</li><li>PostgreSQL</li><li>Docker</li></ul>
             <div class="links">
