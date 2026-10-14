@@ -18,7 +18,7 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:url" content="https://ademarchamineto.github.io/" />
   <meta property="og:title" content="Ademar Chami Neto — Desenvolvedor Full Stack" />
-  <meta property="og:description" content="10 projetos com React, Next.js, Vue, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
+  <meta property="og:description" content="11 projetos com React, Next.js, Vue, NestJS, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
   <meta property="og:image" content="https://ademarchamineto.github.io/assets/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -136,6 +136,26 @@
           "position": 3,
           "item": {
             "@type": "SoftwareSourceCode",
+            "name": "Agenda de Mentorias",
+            "description": "API de agendamento em NestJS + Prisma + PostgreSQL: horários livres sem feriados, marcação sem conta com código de cancelamento, vaga única garantida pelo banco, 2FA e Swagger.",
+            "codeRepository": "https://github.com/AdemarChamiNeto/agenda-mentorias",
+            "programmingLanguage": [
+              "TypeScript",
+              "NestJS",
+              "Prisma",
+              "PostgreSQL"
+            ],
+            "author": {
+              "@id": "https://ademarchamineto.github.io/#pessoa"
+            },
+            "url": "https://agenda-mentorias.onrender.com/docs"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "SoftwareSourceCode",
             "name": "Portal de Chamados",
             "description": "Front-end em Next.js 16 para uma API de help desk, com BFF, cookie httpOnly e testes E2E.",
             "codeRepository": "https://github.com/AdemarChamiNeto/portal-chamados",
@@ -152,7 +172,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "API de Chamados",
@@ -170,7 +190,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Painel de Vulnerabilidades",
@@ -189,7 +209,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle de Ponto",
@@ -209,7 +229,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Protocolo de Cartório",
@@ -227,7 +247,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "SACD",
@@ -245,7 +265,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Ritmo",
@@ -264,7 +284,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle Financeiro",
@@ -390,6 +410,27 @@
             <div class="links">
               <a href="https://github.com/AdemarChamiNeto/visualizador-explain" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
               <a class="demo" href="https://visualizador-explain.onrender.com/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Agenda de Mentorias -->
+        <article class="project">
+          <a class="shot" href="https://agenda-mentorias.onrender.com/docs" target="_blank" rel="noopener">
+            <img src="assets/projects/agenda.jpg" alt="Documentação Swagger da Agenda de Mentorias: rotas públicas de horários, marcação e cancelamento e a área do mentor" loading="lazy" width="1200" height="750" />
+          </a>
+          <div class="project-body">
+            <h3>Agenda de Mentorias</h3>
+            <p data-i18n="p.agenda.desc">API de agendamento: o mentor publica a agenda da semana e o aluno vê os horários livres (sem feriados e bloqueios), marca sem criar conta e cancela com um código.</p>
+            <ul class="highlights">
+              <li data-i18n="p.agenda.h1">Vaga única garantida pelo PostgreSQL: 10 marcações simultâneas, só 1 entra</li>
+              <li data-i18n="p.agenda.h2">Idempotency-Key, fuso do mentor, feriados da BrasilAPI com cache e 2FA</li>
+              <li data-i18n="p.agenda.h3">46 testes com Jest (e2e contra banco real) no CI</li>
+            </ul>
+            <ul class="tags"><li>NestJS</li><li>TypeScript</li><li>Prisma</li><li>PostgreSQL</li><li>Jest</li><li>Docker</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/agenda-mentorias" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+              <a class="demo" href="https://agenda-mentorias.onrender.com/docs" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
             </div>
           </div>
         </article>
@@ -631,7 +672,7 @@
         </div>
         <div class="skill-group">
           <h3>Back-end</h3>
-          <ul class="tags"><li>Node.js</li><li>Express</li><li>tRPC</li><li>C# / .NET 8</li><li>ASP.NET Core</li><li>Entity Framework</li><li>WinForms</li><li>PHP 8</li><li>APIs REST</li><li>JWT</li></ul>
+          <ul class="tags"><li>Node.js</li><li>NestJS</li><li>Express</li><li>tRPC</li><li>C# / .NET 8</li><li>ASP.NET Core</li><li>Prisma</li><li>Entity Framework</li><li>WinForms</li><li>PHP 8</li><li>APIs REST</li><li>JWT</li></ul>
         </div>
         <div class="skill-group">
           <h3 data-i18n="skills.db">Banco de dados</h3>
@@ -639,7 +680,7 @@
         </div>
         <div class="skill-group">
           <h3 data-i18n="skills.devops">Testes e DevOps</h3>
-          <ul class="tags"><li>Vitest</li><li>Testing Library</li><li>Playwright</li><li>PHPUnit</li><li>xUnit</li><li>Docker</li><li>GitHub Actions</li><li>Git</li><li>Swagger</li></ul>
+          <ul class="tags"><li>Jest</li><li>Vitest</li><li>Testing Library</li><li>Playwright</li><li>PHPUnit</li><li>xUnit</li><li>Docker</li><li>GitHub Actions</li><li>Git</li><li>Swagger</li></ul>
         </div>
         <div class="skill-group">
           <h3 data-i18n="skills.also">Também</h3>
