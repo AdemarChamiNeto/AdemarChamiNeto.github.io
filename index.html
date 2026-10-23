@@ -18,7 +18,7 @@
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:url" content="https://ademarchamineto.github.io/" />
   <meta property="og:title" content="Ademar Chami Neto — Desenvolvedor Full Stack" />
-  <meta property="og:description" content="11 projetos com React, Next.js, Vue, NestJS, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
+  <meta property="og:description" content="12 projetos com React, Next.js, Vue, NestJS, Node.js, C#/.NET, PHP e PostgreSQL — com código, testes e demos online." />
   <meta property="og:image" content="https://ademarchamineto.github.io/assets/og-image.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -156,6 +156,26 @@
           "position": 4,
           "item": {
             "@type": "SoftwareSourceCode",
+            "name": "Chaos Proxy",
+            "description": "Proxy reverso em .NET 10 + YARP que injeta falhas de propósito (lentidão, timeout, 5xx, 429 com Retry-After, conexão derrubada, HTML no lugar de JSON) para medir se o cliente aguenta.",
+            "codeRepository": "https://github.com/AdemarChamiNeto/chaos-proxy",
+            "programmingLanguage": [
+              "C#",
+              ".NET",
+              "ASP.NET Core",
+              "YARP"
+            ],
+            "author": {
+              "@id": "https://ademarchamineto.github.io/#pessoa"
+            },
+            "url": "https://chaos-proxy.onrender.com/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "SoftwareSourceCode",
             "name": "Portal de Chamados",
             "description": "Front-end em Next.js 16 para uma API de help desk, com BFF, cookie httpOnly e testes E2E.",
             "codeRepository": "https://github.com/AdemarChamiNeto/portal-chamados",
@@ -172,7 +192,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "API de Chamados",
@@ -190,7 +210,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Painel de Vulnerabilidades",
@@ -209,7 +229,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle de Ponto",
@@ -229,7 +249,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Protocolo de Cartório",
@@ -247,7 +267,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "SACD",
@@ -265,7 +285,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Ritmo",
@@ -284,7 +304,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 11,
+          "position": 12,
           "item": {
             "@type": "SoftwareSourceCode",
             "name": "Controle Financeiro",
@@ -431,6 +451,27 @@
             <div class="links">
               <a href="https://github.com/AdemarChamiNeto/agenda-mentorias" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
               <a class="demo" href="https://agenda-mentorias.onrender.com/docs" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Chaos Proxy -->
+        <article class="project">
+          <a class="shot" href="https://chaos-proxy.onrender.com/" target="_blank" rel="noopener">
+            <img src="assets/projects/chaos.jpg" alt="Demo do Chaos Proxy no cenário API instável: o cliente resiliente acertou 20 de 20 requisições com 22 tentativas, e cada falha injetada aparece marcada" loading="lazy" width="1200" height="750" />
+          </a>
+          <div class="project-body">
+            <h3>Chaos Proxy</h3>
+            <p data-i18n="p.chaos.desc">Proxy reverso que fica entre um cliente e uma API e injeta falhas de propósito (lentidão, timeout, erro 5xx, 429 com Retry-After, conexão derrubada e HTML no lugar de JSON) para medir, com números, se o cliente aguenta.</p>
+            <ul class="highlights">
+              <li data-i18n="p.chaos.h1">Com ele, o Portal de Chamados ganhou novas tentativas e circuit breaker: de 20/30 para 30/30 com a API instável</li>
+              <li data-i18n="p.chaos.h2">Achou dois bugs reais: o token que não chegava ao PHP no Docker e o HTML aceito como sucesso no Portal</li>
+              <li data-i18n="p.chaos.h3">Cenário por visitante na demo pública, rate limit em toda rota e 67 testes com xUnit no CI</li>
+            </ul>
+            <ul class="tags"><li>C#</li><li>.NET 10</li><li>YARP</li><li>ASP.NET Core</li><li>xUnit</li><li>Docker</li></ul>
+            <div class="links">
+              <a href="https://github.com/AdemarChamiNeto/chaos-proxy" target="_blank" rel="noopener" data-i18n="links.code">Código</a>
+              <a class="demo" href="https://chaos-proxy.onrender.com/" target="_blank" rel="noopener" data-i18n="links.demo">Demo</a>
             </div>
           </div>
         </article>
@@ -672,7 +713,7 @@
         </div>
         <div class="skill-group">
           <h3>Back-end</h3>
-          <ul class="tags"><li>Node.js</li><li>NestJS</li><li>Express</li><li>tRPC</li><li>C# / .NET 8</li><li>ASP.NET Core</li><li>Prisma</li><li>Entity Framework</li><li>WinForms</li><li>PHP 8</li><li>APIs REST</li><li>JWT</li></ul>
+          <ul class="tags"><li>Node.js</li><li>NestJS</li><li>Express</li><li>tRPC</li><li>C# / .NET</li><li>ASP.NET Core</li><li>YARP</li><li>Prisma</li><li>Entity Framework</li><li>WinForms</li><li>PHP 8</li><li>APIs REST</li><li>JWT</li></ul>
         </div>
         <div class="skill-group">
           <h3 data-i18n="skills.db">Banco de dados</h3>
